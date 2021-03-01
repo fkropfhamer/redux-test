@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import {CounterDisplay} from "./features/counter/CounterDisplay";
+import Todos from "./features/todos/Todos";
 
 function App() {
   return (
@@ -38,7 +40,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Redux Toolkit
+            Redux Toolkit is great
           </a>
           ,<span> and </span>
           <a
@@ -50,6 +52,8 @@ function App() {
             React Redux
           </a>
         </span>
+        <CounterDisplay />
+        <Todos />
       </header>
     </div>
   );
